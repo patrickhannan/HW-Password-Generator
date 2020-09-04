@@ -11,7 +11,10 @@ function writePassword() {
 
 function generatePassword() {
   var passwordLength = Math.round(parseInt(prompt("How many characters would you like your password to contain? You must choose a whole number between 8 and 128")));
-  
+  var pwlowercase = ["abcdefghijklmnopqrstuvwxyz"];
+  var pwuppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+  var pwnumber = ["1234567890"];
+  var pwspecial = ["`~!@#$%^&*()_+-=][|}{;:'<>?,./"];
 }
 
 // Add event listener to generate button
