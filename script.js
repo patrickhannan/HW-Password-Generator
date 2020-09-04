@@ -10,7 +10,8 @@ function writePassword() {
 }
 
 function generatePassword() {
-
+  var passwordLength = Math.round(parseInt(prompt("How many characters would you like your password to contain? You must choose a whole number between 8 and 128")));
+  
 }
 
 // Add event listener to generate button
