@@ -15,6 +15,11 @@ function generatePassword() {
   var pwuppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
   var pwnumber = ["1234567890"];
   var pwspecial = ["`~!@#$%^&*()_+-=][|}{;:'<>?,./"];
+
+  if (!passwordLength) {
+    alert("This value is required.")
+  } else if (passwordLength < 8 || passwordLength > 128) {
+    alert("You must choose a number of characters between 8 and 128.")
 }
 
 // Add event listener to generate button
