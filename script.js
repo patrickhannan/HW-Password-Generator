@@ -7,6 +7,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
+  
 }
 
 function generatePassword() {
@@ -15,6 +17,7 @@ function generatePassword() {
   var pwuppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
   var pwnumber = ["1234567890"];
   var pwspecial = ["`~!@#$%^&*()_+-=][|}{;:'<>?,./"];
+
 
   if (!passwordLength) {
     alert("This value is required.")
@@ -25,7 +28,8 @@ function generatePassword() {
     var confirmUppercase = confirm("Would you like your password to include uppercase letters?");
     var confirmNumbers = confirm("Would you like your password to include numbers?");
     var confirmSpecial = confirm("Would you like your password to include special characters?");
-  } 
+  }
+
 
   var userSelections = "";
   if (!confirmLowercase && !confirmUppercase && !confirmNumbers && !confirmSpecial) {
@@ -50,6 +54,8 @@ function generatePassword() {
         Math.floor(Math.random() * userSelections.length)]
     )  
   }
+
+  return randomPassword;
 }
 
 // Add event listener to generate button
