@@ -20,6 +20,12 @@ function generatePassword() {
     alert("This value is required.")
   } else if (passwordLength < 8 || passwordLength > 128) {
     alert("You must choose a number of characters between 8 and 128.")
+  } else {
+    var confirmLowercase = confirm("Would you like your password to include lowercase letters?");
+    var confirmUppercase = confirm("Would you like your password to include uppercase letters?");
+    var confirmNumbers = confirm("Would you like your password to include numbers?");
+    var confirmSpecial = confirm("Would you like your password to include special characters?");
+  } 
 }
 
 // Add event listener to generate button
