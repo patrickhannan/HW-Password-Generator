@@ -26,6 +26,10 @@ function generatePassword() {
     var confirmNumbers = confirm("Would you like your password to include numbers?");
     var confirmSpecial = confirm("Would you like your password to include special characters?");
   } 
+
+  var userSelections = "";
+  if (!confirmLowercase && !confirmUppercase && !confirmNumbers && !confirmSpecial) {
+    alert("Your password can not be created. Please confirm at least one type of character."
 }
 
 // Add event listener to generate button
