@@ -43,6 +43,13 @@ function generatePassword() {
   if (confirmSpecial === true) {
     userSelections = userSelections.concat(pwspecial)
   }
+
+  var randomPassword = "";
+  for (var i = 0; i < passwordLength; i++) {
+    var randomPassword = randomPassword.concat(userSelections[
+        Math.floor(Math.random() * userSelections.length)]
+    )  
+  }
 }
 
 // Add event listener to generate button
