@@ -29,7 +29,20 @@ function generatePassword() {
 
   var userSelections = "";
   if (!confirmLowercase && !confirmUppercase && !confirmNumbers && !confirmSpecial) {
-    alert("Your password can not be created. Please confirm at least one type of character."
+    alert("Your password can not be created. Please confirm at least one type of character.")
+  } 
+  if (confirmLowercase === true) {
+    userSelections = userSelections.concat(pwlowercase)
+  }
+  if (confirmUppercase === true) {
+    userSelections = userSelections.concat(pwuppercase)
+  }
+  if (confirmNumbers === true) {
+    userSelections = userSelections.concat(pwnumber)
+  }
+  if (confirmSpecial === true) {
+    userSelections = userSelections.concat(pwspecial)
+  }
 }
 
 // Add event listener to generate button
